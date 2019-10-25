@@ -6,8 +6,7 @@
 void main(int argc, char* argv[]) {
 	int fdi, i, n, adr;
 	unsigned char buf[16];
-
-	if ((fdi = open(argv[0], O_RDONLY | O_BINARY)) == -1) {
+	if ((fdi = open(argv[1], O_RDONLY | O_BINARY)) == -1) {
 		printf("File not found\n", argv[0]);
 		exit(0);
 	}
